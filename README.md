@@ -2,12 +2,9 @@
 
 A browser extension for observing and visualizing API requests made by the RUCKUS One web interface.
 
-## Current fix build: 2.11.1
+## Current build: 2.11.3
 
-This build addresses two problems reported in v2.11.0:
-
-- Workflow discovery now analyzes the captured request dataset independently of the Live Capture list filters (including the Active tab checkbox), so filters no longer accidentally hide requests from discovery.
-- The Stop Live Capture control now handles background-message failures defensively, re-reads the saved capture state, and reports a warning rather than failing silently.
+v2.11.3 removes the **Partner / support notes** section from the side panel. The previous v2.11.2 fix also adds the missing `safePath()` helper used by workflow discovery and related UI handlers.
 
 Core capabilities:
 - **Live Capture** — observe API requests while navigating RUCKUS One.
@@ -38,7 +35,7 @@ Captured traffic may include tenant identifiers, personal information, internal 
 
 ## Validation
 
-The JavaScript files pass Node syntax checks and both ZIP archives pass ZIP integrity checks. Live browser testing is still required; these checks do not prove that capture works in every browser or RUCKUS One tenant.
+The v2.11.3 packages were checked for ZIP integrity and JavaScript syntax. Live browser testing is still required; these checks do not prove that capture works in every browser or RUCKUS One tenant.
 
 ## Disclaimer
 
