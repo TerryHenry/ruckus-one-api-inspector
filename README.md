@@ -20,16 +20,6 @@ Core capabilities:
 4. Select **Load unpacked** and choose the extracted folder containing `manifest.json`.
 5. Open RUCKUS One, start Live Capture, navigate through a workflow, then select Discover workflows.
 
-## Install in Firefox
-
-1. Download and extract the Firefox ZIP package.
-2. Open `about:debugging#/runtime/this-firefox`.
-3. Select **Load Temporary Add-on** and choose the extension's `manifest.json`.
-4. Open RUCKUS One and test Live Capture, Workflow Discovery, and Visual API Flow.
-
-Temporary Firefox add-ons normally need to be loaded again after Firefox restarts.
-
-## Security and privacy
 
 Captured traffic may include tenant identifiers, personal information, internal URLs, or authentication-related material. Treat captures as sensitive operational data. Review and sanitize captures before sharing them. Never commit credentials, tokens, browser profiles, or real tenant traffic.
 
