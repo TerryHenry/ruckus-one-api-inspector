@@ -2,9 +2,9 @@
 
 A browser extension for observing and visualizing API requests made by the RUCKUS One web interface.
 
-## Current build: 2.11.6
+## Current build: 2.11.7
 
-v2.11.6 stops capturing noise: the Split.io feature-flag proxy (`splitproxy.*`) and static JSON/locale files. Earlier releases: v2.11.5 fixed write-op classification and the export version; v2.11.4 was a hardening release. See `RELEASE_NOTES_v2.11.6.md`.
+v2.11.7 adds two opt-in settings (Settings → Capture & export options; both default to the previous behavior): **mask email addresses in exports**, and a **max captured response size** (120 KB default, up to 2 MB). It also fixes a slow-regex case in body redaction. Earlier: v2.11.6 noise filtering, v2.11.5 write classification, v2.11.4 hardening. See `RELEASE_NOTES_v2.11.7.md`.
 
 Core capabilities:
 - **Live Capture** — observe API requests while navigating RUCKUS One.
@@ -25,7 +25,7 @@ Captured traffic may include tenant identifiers, personal information, internal 
 
 ## Validation
 
-The v2.11.6 package passed JavaScript syntax checks and mock-based tests of the page hook (redaction, streaming responses, host filtering) and background write queue (200 concurrent captures, none lost), and write classification and noise filtering (replayed against a real 41-request capture). Live testing in Chrome against a real RUCKUS One tenant has not been performed.
+The v2.11.7 package passed JavaScript syntax checks and mock-based tests of the page hook (redaction, streaming responses, host filtering) and background write queue (200 concurrent captures, none lost), and write classification and noise filtering, email masking and body-size limits (replayed against a real 41-request capture). Live testing in Chrome against a real RUCKUS One tenant has not been performed.
 
 ## Disclaimer
 
