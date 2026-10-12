@@ -2,9 +2,9 @@
 
 A browser extension for observing and visualizing API requests made by the RUCKUS One web interface.
 
-## Current build: 2.11.8
+## Current build: 2.11.9
 
-v2.11.8 adds a **Settings** tab to the side panel (v2.11.7 added the two opt-in options but they were not reachable from the UI). Options (Settings tab → Capture & export options; both default to the previous behavior): **mask email addresses in exports**, and a **max captured response size** (120 KB default, up to 2 MB). It also fixes a slow-regex case in body redaction. Earlier: v2.11.7 added the options, v2.11.6 noise filtering, v2.11.5 write classification, v2.11.4 hardening. See `RELEASE_NOTES_v2.11.8.md`.
+v2.11.9 adds a third opt-in export option, **Mask client identifiers** (MAC, IP, hostname, username), alongside **Mask email addresses** and **Max captured response size**. All three live in the **Settings** tab and default to the original behavior. Earlier: v2.11.8 Settings tab and removal of the hidden Projects & backup panel; v2.11.7 options; v2.11.6 noise filtering; v2.11.5 write classification; v2.11.4 hardening. See `RELEASE_NOTES_v2.11.9.md`.
 
 Core capabilities:
 - **Live Capture** — observe API requests while navigating RUCKUS One.
@@ -25,7 +25,7 @@ Captured traffic may include tenant identifiers, personal information, internal 
 
 ## Validation
 
-The v2.11.8 package passed JavaScript syntax checks and mock-based tests of the page hook (redaction, streaming responses, host filtering) and background write queue (200 concurrent captures, none lost), and write classification and noise filtering, email masking and body-size limits (replayed against a real 41-request capture). Live testing in Chrome against a real RUCKUS One tenant has not been performed.
+The v2.11.9 package passed JavaScript syntax checks and mock-based tests of the page hook (redaction, streaming responses, host filtering) and background write queue (200 concurrent captures, none lost), and write classification and noise filtering, email and client-identifier masking and body-size limits (replayed against a real 41-request capture). Live testing in Chrome against a real RUCKUS One tenant has not been performed.
 
 ## Disclaimer
 
