@@ -2,9 +2,9 @@
 
 A browser extension for observing and visualizing API requests made by the RUCKUS One web interface.
 
-## Current build: 2.11.5
+## Current build: 2.11.6
 
-v2.11.5 fixes the "write ops" count (POST read queries such as `/venues/query` were counted as writes) and the hardcoded `2.0.0` version in JSON exports. It builds on the v2.11.4 hardening release; see `RELEASE_NOTES_v2.11.5.md`.
+v2.11.6 stops capturing noise: the Split.io feature-flag proxy (`splitproxy.*`) and static JSON/locale files. Earlier releases: v2.11.5 fixed write-op classification and the export version; v2.11.4 was a hardening release. See `RELEASE_NOTES_v2.11.6.md`.
 
 Core capabilities:
 - **Live Capture** — observe API requests while navigating RUCKUS One.
@@ -25,7 +25,7 @@ Captured traffic may include tenant identifiers, personal information, internal 
 
 ## Validation
 
-The v2.11.5 package passed JavaScript syntax checks and mock-based tests of the page hook (redaction, streaming responses, host filtering) and background write queue (200 concurrent captures, none lost), and write classification (checked against a real 41-request capture). Live testing in Chrome against a real RUCKUS One tenant has not been performed.
+The v2.11.6 package passed JavaScript syntax checks and mock-based tests of the page hook (redaction, streaming responses, host filtering) and background write queue (200 concurrent captures, none lost), and write classification and noise filtering (replayed against a real 41-request capture). Live testing in Chrome against a real RUCKUS One tenant has not been performed.
 
 ## Disclaimer
 
