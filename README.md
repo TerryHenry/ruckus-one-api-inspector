@@ -2,9 +2,9 @@
 
 A browser extension for observing and visualizing API requests made by the RUCKUS One web interface.
 
-## Current build: 2.11.3
+## Current build: 2.11.4
 
-v2.11.3 removes the **Partner / support notes** section from the side panel. The previous v2.11.2 fix also adds the missing `safePath()` helper used by workflow discovery and related UI handlers.
+v2.11.4 is a hardening release (see `RELEASE_NOTES_v2.11.4.md`): fixes fetch capture blocking streaming responses, fixes lost records under concurrent traffic, restricts capture to RUCKUS hosts, and replaces regex-only redaction with structured JSON redaction.
 
 Core capabilities:
 - **Live Capture** — observe API requests while navigating RUCKUS One.
@@ -25,7 +25,7 @@ Captured traffic may include tenant identifiers, personal information, internal 
 
 ## Validation
 
-The v2.11.3 packages were checked for ZIP integrity and JavaScript syntax. Live browser testing is still required; these checks do not prove that capture works in every browser or RUCKUS One tenant.
+The v2.11.4 package passed JavaScript syntax checks and mock-based tests of the page hook (redaction, streaming responses, host filtering) and background write queue (200 concurrent captures, none lost). Live testing in Chrome against a real RUCKUS One tenant has not been performed.
 
 ## Disclaimer
 
