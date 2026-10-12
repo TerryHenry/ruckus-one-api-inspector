@@ -7,8 +7,8 @@ A browser extension for observing and visualizing API requests made by the RUCKU
 v2.11.12 fixes the layout of the Settings tab and removes a leftover notes box from the Visual API Flow tab, and ships refreshed documentation. See `RELEASE_NOTES_v2.11.12.md` for the full list of changes since 2.11.4 (hardening, write-op classification, noise filtering, the Settings tab, and the opt-in email, client-identifier, and organization masking options).
 
 **Documentation (v2.11.12):**
-- `RUCKUS_One_API_Inspector_Getting_Started_v2.11.12_with_Screenshots.docx`: install, first capture, safe sharing.
-- `RUCKUS_One_API_Inspector_User_Guide_v2.11.12_with_Screenshots.docx`: full feature reference.
+- `RUCKUS_One_API_Inspector_Getting_Started_v2.11.12.docx`: install, first capture, safe sharing.
+- `RUCKUS_One_API_Inspector_User_Guide_v2.11.12.docx`: full feature reference.
 
 Core capabilities:
 - **Live Capture** — observe API requests while navigating RUCKUS One.
